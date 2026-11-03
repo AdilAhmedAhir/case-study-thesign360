@@ -2,14 +2,6 @@
 
 > **Architecture case study.** Source code is private and owned by the client. This repository contains original documentation only: no client code, data, credentials or assets.
 
-## Problem
-
-A brand studio needed a controlled place to store creative assets and to host HTML5 ad packages for review and delivery, without sending zip files around by email.
-
-## Solution
-
-A client and server application where users upload creative assets and zipped HTML ads; the server unpacks, stores and serves them behind authentication, and can package assets for download.
-
 ## Architecture
 
 ```mermaid
@@ -21,6 +13,14 @@ flowchart LR
   S --> ZIP[Zip extract / archive]
   V[Reviewer] -->|preview link| S
 ```
+
+## Problem
+
+A brand studio needed a controlled place to store creative assets and to host HTML5 ad packages for review and delivery, without sending zip files around by email.
+
+## Solution
+
+A client and server application where users upload creative assets and zipped HTML ads; the server unpacks, stores and serves them behind authentication, and can package assets for download.
 
 ## Modules
 
